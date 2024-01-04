@@ -56,6 +56,10 @@ final class BlogController extends AbstractController
         }
         $latestPosts = $posts->findLatest($page, $tag);
 
+        if ($tag = 'phpmd-test') {
+            // this is error for phpmd
+        }
+
         // Every template name also has two extensions that specify the format and
         // engine for that template.
         // See https://symfony.com/doc/current/templates.html#template-naming
